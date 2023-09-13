@@ -10,7 +10,7 @@ import io.cucumber.java.en.*;
 
 public class GoogleSearchSteps {
 //
-//	WebDriver driver=null;
+	WebDriver driver=null;
 //	
 //	
 //@Given("browser is open")
@@ -45,12 +45,12 @@ public class GoogleSearchSteps {
 //   Thread.sleep(2000);
 //}
 //
-//@And("hits enter")
-//public void hits_enter() throws InterruptedException {
-//	System.out.println("Step4 - user hits enter");
-//	   driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-//	   Thread.sleep(2000);
-//}
+@And("hits enter")
+public void hits_enter() throws InterruptedException {
+	System.out.println("Step4 - user hits enter");
+	   driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+	   Thread.sleep(2000);
+}
 //
 //@Then("user is navigated to search results")
 //public void user_is_navigated_to_search_results() throws InterruptedException {
